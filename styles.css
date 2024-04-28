@@ -1,0 +1,115 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.nav-brand,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border-radius: calc(0.375rem - (1px));
+}
+
+.navbar-brand,
+.logo {
+  color: #606c38;
+  font-family: "Lato", sans-serif;
+}
+
+/* Hero Section */
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/coffeeshop.jpg);
+  height: 95vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+hgroup {
+  color: #fff;
+}
+
+.myButton {
+  background-color: #606c38;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.myButton:hover {
+  background-color: #283618;
+}
+
+/* About Us Section */
+
+@media screen and (min-width: 1200px) {
+  .welc {
+    font-size: 1.5rem;
+  }
+}
+
+/* Customer Favourites Section */
+
+.card-img-top {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+  border-radius: calc(0.375rem - (1px));
+}
+
+.card {
+  border: none;
+}
+
+/* Testimonials */
+
+.carousel-item {
+  height: 30vh;
+  background-color: #283618;
+  color: #fff;
+}
+
+/* Footer */
+
+footer a {
+  color: rgba(0, 0, 0, 0.65) !important;
+  transition: color 0.15s ease-in-out;
+}
+
+footer a:hover {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+footer .active {
+  color: rgba(0, 0, 0, 1) !important;
+}
+
+.grow {
+  flex: 1 0 auto;
+}
+
+.item {
+  width: 16rem;
+}

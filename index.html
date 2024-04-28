@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cobweb's Coffee - Home</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,8 +11,330 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9fe1ab2583.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <header>
+      <div class="container">
+        <!-- Collapsible bootstrap navbar -->
+        <nav class="navbar navbar-expand-lg py-3 navbar-custom">
+          <div class="container-fluid">
+            <a class="navbar-brand lato-normal d-flex fs-5" href="./index.html"
+              ><i class="fa-solid fa-mug-hot me-2 fa-lg"></i>Cobweb's Coffee</a
+            >
+            <button
+              class="navbar-toggler custom-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fs-5"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="#welcome">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Hero Section -->
+      <div
+        class="container-fluid hero d-flex justify-content-center align-items-center"
+      >
+        <div class="heroHeader d-flex flex-column align-items-center">
+          <hgroup class="text-center mb-2">
+            <h1 class="montserrat-bold">Comfort, Cosiness and Coffee</h1>
+            <p class="h4">Your friendly local retreat</p>
+          </hgroup>
+          <a href="#welcome"
+            ><button class="p-2 fs-5 p-lg-3 myButton">More about us</button></a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Welcome Section -->
+      <section id="welcome">
+        <div class="container-fluid welc">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-12 col-md-6 mt-4 d-flex flex-column justify-content-center"
+              >
+                <h2>Welcome</h2>
+                <p>
+                  We're a cosy little coffee shop founded in Bradshaw in 2021 by
+                  local barista and coffee aficionado Louisa. We aim to provide
+                  a welcoming and inclusive space for you to relax, work (we
+                  have free wi-fi!) and socialise over excellent brews, cakes
+                  and bakes.
+                </p>
+              </div>
+              <div class="col-12 col-md-6">
+                <figure class="mt-md-4">
+                  <img class="img-fluid" src="./images/louisa.jpg" />
+                  <figcaption class="text-center">Founder Louisa</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Customer Favorites Section -->
+      <section id="faves" class="mt-4 text-center">
+        <div class="container">
+          <h2>Customer Favourites</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="./images/lattesmall.jpg"
+                  alt="A glass off latte"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Caffe Latte</h4>
+                  <p class="card-text">
+                    One or two shots of espresso, steamed milk and a final, thin
+                    layer of frothed milk on top.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="./images/carrotcake.jpg"
+                  alt="A carrot cake with a slice cut out of it"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Carrot Cake</h4>
+                  <p class="card-text">
+                    Home baked carrot cake covered in toasted nuts and cream
+                    cheese icing. Yum!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="./images/cappucino.jpg"
+                  alt="A mug of cappucino"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Cappuccino</h4>
+                  <p class="card-text">
+                    Perfect balance of espresso, steamed milk and foam. Optional
+                    chocolate sprinkles.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#"
+            ><button class="myButton p-lg-3 p-2 fs-5">
+              Explore the menu
+            </button></a
+          >
+        </div>
+      </section>
+      <aside class="mt-4">
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="container d-flex h-100 justify-content-center align-items-center"
+              >
+                <blockquote class="text-center">
+                  <p>&ldquo;The coffee here is delicious.&rdquo;</p>
+                  <footer>- A happy customer</footer>
+                </blockquote>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="container d-flex h-100 justify-content-center align-items-center"
+              >
+                <blockquote class="text-center">
+                  <p>
+                    &ldquo;The staff are so friendly and the ambience is really
+                    relaxing.&rdquo;
+                  </p>
+                  <footer>- A satisfied client</footer>
+                </blockquote>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="container d-flex h-100 justify-content-center align-items-center"
+              >
+                <blockquote class="text-center">
+                  <p>&ldquo;Free wifi and the best cakes in town.&rdquo;</p>
+                  <footer>- A regular</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev d-none d-md-block"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next d-none d-md-block"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <div class="container mt-4">
+        <a
+          class="navbar-brand d-flex fs-5 mb-3 justify-content-center"
+          href="./index.html"
+          ><i class="fa-solid fa-mug-hot me-2 fa-lg"></i>Cobweb's Coffee</a
+        >
+        <div class="row">
+          <div class="col-12 col-lg-4 d-flex flex-column">
+            <h3 class="text-center">Contact Us</h3>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center grow"
+            >
+              <div class="d-flex item">
+                <i class="fa-solid fa-location-dot pt-1 px-2 icon"></i>
+                <p>
+                  123 Bradshaw Lane<br />Bradshaw<br />Blackburn<br />BL2 7EF
+                </p>
+              </div>
+              <div class="mb-3 item">
+                <i class="fa-solid fa-phone px-2 icon"></i>
+                <a href="tel: 07721 384 278">07721 384 278</a>
+              </div>
+              <div class="item">
+                <i class="fa-solid fa-envelope px-2 icon"></i>
+                <a href="mailto: cobwebs@coffee.co.uk">cobwebs@coffee.co.uk</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 text-center d-flex flex-column my-3 my-lg-0"
+          >
+            <h3>Sitemap</h3>
+            <ul class="nav flex-column justify-content-center grow">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#welcome">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4 d-flex flex-column">
+            <h3 class="text-center">Our Socials</h3>
+            <div class="grow d-flex justify-content-center align-items-center">
+              <a href="https://www.facebook.com/"
+                ><i class="fa-brands fa-facebook fa-xl pe-4 py-3 icon"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fa-brands fa-instagram fa-xl pe-4 py-3 icon"></i
+              ></a>
+              <a href="https://twitter.com/?lang=en"
+                ><i class="fa-brands fa-x-twitter fa-xl pe-4 py-3 icon"></i
+              ></a>
+              <a href="https://www.whatsapp.com/"
+                ><i class="fa-brands fa-whatsapp fa-xl py-3"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-3">
+          <p>
+            <small
+              >&copy <time>2024</time> Cobweb's Coffee. All rights
+              reserved.</small
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
