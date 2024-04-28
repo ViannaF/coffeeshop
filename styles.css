@@ -30,9 +30,13 @@ img {
 }
 
 .navbar-brand,
-.logo {
-  color: #606c38;
+footer .footerLogo {
+  color: #606c38 !important;
   font-family: "Lato", sans-serif;
+}
+
+footer .footerLogo:hover {
+  color: #606c38 !important;
 }
 
 /* Hero Section */
