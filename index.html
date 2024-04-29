@@ -26,7 +26,7 @@
     <header>
       <div class="container">
         <!-- Collapsible bootstrap navbar -->
-        <nav class="navbar navbar-expand-lg py-3 navbar-custom">
+        <nav class="navbar navbar-expand-lg py-3 fixed-top">
           <div class="container-fluid">
             <a class="navbar-brand lato-normal d-flex fs-5" href="./index.html"
               ><i class="fa-solid fa-mug-hot me-2 fa-lg"></i>Cobweb's Coffee</a
@@ -69,7 +69,7 @@
       >
         <div class="heroHeader d-flex flex-column align-items-center">
           <hgroup class="text-center mb-2">
-            <h1 class="montserrat-bold">Comfort, Cosiness and Coffee</h1>
+            <h1>Comfort, Cosiness and Coffee</h1>
             <p class="h4">Your friendly local retreat</p>
           </hgroup>
           <a href="#welcome"
@@ -126,7 +126,7 @@
                   alt="A glass off latte"
                 />
                 <div class="card-body">
-                  <h3 class="card-title fs-5">Caffe Latte</h3>
+                  <h3 class="card-title h5">Caffe Latte</h3>
                   <p class="card-text">
                     One or two shots of espresso, steamed milk and a final, thin
                     layer of frothed milk on top.
@@ -142,7 +142,7 @@
                   alt="A carrot cake with a slice cut out of it"
                 />
                 <div class="card-body">
-                  <h3 class="card-title fs-5">Carrot Cake</h3>
+                  <h3 class="card-title h5">Carrot Cake</h3>
                   <p class="card-text">
                     Home baked carrot cake covered in toasted nuts and cream
                     cheese icing. Yum!
@@ -158,7 +158,7 @@
                   alt="A mug of cappucino"
                 />
                 <div class="card-body">
-                  <h3 class="card-title fs-5">Cappuccino</h3>
+                  <h3 class="card-title h5">Cappuccino</h3>
                   <p class="card-text">
                     Perfect balance of espresso, steamed milk and foam. Optional
                     chocolate sprinkles.
@@ -174,6 +174,7 @@
           >
         </div>
       </section>
+      <!-- Testimonials slider -->
       <aside class="mt-4">
         <div
           id="testimonialCarousel"
@@ -260,6 +261,11 @@
     </main>
     <footer>
       <div class="container mt-4">
+        <a
+          class="d-flex fs-5 mb-3 justify-content-center footerLogo"
+          href="./index.html"
+          ><i class="fa-solid fa-mug-hot me-2 fa-lg"></i>Cobweb's Coffee</a
+        >
         <div class="row">
           <div class="col-12 col-md-6 d-flex flex-column align-items-center">
             <address>
@@ -271,9 +277,11 @@
                   ></i>
                 </div>
                 <div class="address">
-                  123 Bradshaw Lane<br />
-                  Blackburn<br />
-                  BG6 5AC
+                  <p>
+                    123 Bradshaw Lane<br />
+                    Blackburn<br />
+                    BG6 5AC
+                  </p>
                 </div>
               </div>
               <p>
