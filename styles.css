@@ -115,3 +115,30 @@ footer .active {
 footer .footerLogo:hover {
   color: #606c38 !important;
 }
+
+.accordion-button {
+  background-color: #606c38 !important;
+  color: #fff !important;
+}
+.prices {
+  gap: 1rem;
+}
+
+@media screen and (min-width: 767px) {
+  .prices.d-flex {
+    gap: 1rem;
+  }
+
+  .item.d-flex {
+    gap: 1rem;
+  }
+
+  .price {
+    width: 60px;
+  }
+
+  .prices,
+  .prices p {
+    width: 120px;
+  }
+}
