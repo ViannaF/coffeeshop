@@ -10,6 +10,7 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
+
 p {
   max-width: 64ch;
 }
@@ -43,6 +44,20 @@ footer .footerLogo {
   font-family: "Lato", sans-serif;
 }
 
+.myButton {
+  background-color: #606c38;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.15s ease-in-out;
+}
+
+@media (hover: hover) {
+  .myButton:hover {
+    background-color: #283618;
+  }
+}
+
 /* Hero Section */
 
 .hero {
@@ -56,18 +71,6 @@ footer .footerLogo {
 
 hgroup {
   color: #fff;
-}
-
-.myButton {
-  background-color: #606c38;
-  color: #fff;
-  border-radius: 8px;
-  border: none;
-  transition: background-color 0.15s ease-in-out;
-}
-
-.myButton:hover {
-  background-color: #283618;
 }
 
 /* Customer Favourites Section */
@@ -111,6 +114,8 @@ footer .footerLogo:hover {
   color: #606c38 !important;
 }
 
+/* Menu page */
+
 .accordion-button {
   background-color: #606c38 !important;
   color: #fff !important;
@@ -127,6 +132,8 @@ footer .footerLogo:hover {
   }
 }
 
+/* Contact page */
+
 @media screen and (max-width: 767px) {
   .google-map {
     padding-bottom: 50%;
@@ -141,4 +148,3 @@ footer .footerLogo:hover {
     position: absolute;
   }
 }
-

@@ -67,6 +67,7 @@
     </header>
     <main>
       <div class="container">
+        <!-- Location and contact details -->
         <section class="mt-4">
           <div
             class="d-flex flex-column flex-xl-row justify-content-xl-between"
@@ -129,12 +130,18 @@
             </div>
           </div>
         </section>
+        <!-- Contact us form -->
         <section class="mt-4 text-center">
           <div class="row">
             <div class="col-md-10 col-lg-8 mx-md-auto">
               <h2>Get In Touch</h2>
-              <form action="#" method="post">
-                <div class="mb-3">
+              <form
+                action="https://example.com"
+                method="POST"
+                class="needs-validation"
+                novalidate
+              >
+                <div class="mb-3 text-start">
                   <label for="fullname" class="form-label">Name:</label
                   ><input
                     type="text"
@@ -142,9 +149,13 @@
                     id="fullname"
                     class="form-control"
                     placeholder="name"
+                    required
                   />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please enter your name.</div>
                 </div>
-                <div class="mb-3">
+
+                <div class="mb-3 text-start">
                   <label for="email" class="form-label">Email:</label
                   ><input
                     type="email"
@@ -152,24 +163,34 @@
                     id="email"
                     class="form-control"
                     placeholder="email"
+                    minlength="8"
+                    required
                   />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 text-start">
                   <label class="form-label">Your Message:</label>
                   <textarea
                     name="message"
                     rows="5"
                     class="form-control"
                     placeholder="Leave your message here."
+                    required
                   ></textarea>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please leave a message.</div>
                 </div>
                 <div class="form-check mb-3 d-flex gap-2">
                   <input
-                    type="radio"
+                    type="checkbox"
                     name="news"
                     id="news"
                     value="yes"
                     class="form-check-input"
+                    required
                     checked
                   /><label for="news" class="form-check-label label"
                     >Sign up to receive news updates, events and
@@ -177,12 +198,18 @@
                   >
                 </div>
                 <div class="mb-3">
-                  <input type="submit" value="submit" class="btn btn-primary" />
+                  <input
+                    type="submit"
+                    value="Submit"
+                    class="btn btn-primary"
+                    id="formButton"
+                  />
                 </div>
               </form>
             </div>
           </div>
         </section>
+        <!-- Social media contact details -->
         <section class="mt-4">
           <div class="d-flex flex-column align-items-center">
             <h2>Our Socials</h2>
@@ -208,8 +235,10 @@
         </section>
       </div>
     </main>
+    <!-- Footer -->
     <footer>
       <div class="container mt-5">
+        <!-- Contact details -->
         <a
           class="d-flex fs-5 mb-3 justify-content-center footerLogo"
           href="./index.html"
@@ -257,6 +286,7 @@
               </p>
             </address>
           </div>
+          <!-- Sitemap -->
           <div class="col-12 col-lg-4 flex-column align-items-center">
             <h3 class="h5 text-center">Sitemap</h3>
             <nav class="nav flex-column align-items-center">
@@ -279,6 +309,7 @@
               </li>
             </nav>
           </div>
+          <!-- Social media icons -->
           <div
             class="col-12 col-lg-4 d-flex flex-column justify-content-start align-items-center"
           >
@@ -299,6 +330,7 @@
             </div>
           </div>
         </div>
+        <!-- Copyright information -->
         <div class="d-flex justify-content-center align-items-center mt-3">
           <p>
             <small
@@ -314,5 +346,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./main.jss"></script>
   </body>
 </html>
