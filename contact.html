@@ -26,9 +26,9 @@
     <header>
       <div class="container">
         <!-- Collapsible bootstrap navbar -->
-        <nav class="navbar navbar-expand-lg py-3">
+        <nav class="navbar navbar-expand-lg py-3" data-bs-theme="dark">
           <div class="container-fluid">
-            <a class="navbar-brand lato-normal d-flex fs-5" href="./index.html"
+            <a class="navbar-brand d-flex" href="./index.html"
               ><i class="fa-solid fa-mug-hot me-2 fa-lg"></i>Cobweb's Coffee</a
             >
             <button
@@ -62,15 +62,15 @@
             </div>
           </div>
         </nav>
-        <h1 class="text-center">Contact Us</h1>
       </div>
     </header>
-    <main>
-      <div class="container">
+    <main class="pt-4 pt-lg-5">
+      <section class="pb-4">
+        <h1 class="text-center mb-4">Contact Us</h1>
         <!-- Location and contact details -->
-        <section class="mt-4">
+        <div class="container">
           <div
-            class="d-flex flex-column flex-xl-row justify-content-xl-between"
+            class="d-flex flex-column align-items-center flex-xl-row justify-content-xl-between"
           >
             <div id="visit">
               <h2>Visit Us</h2>
@@ -81,9 +81,12 @@
                 to the back of the store.<br />
               </p>
               <p>
-                <span class="mb-2">Opening hours:<br /></span>
-                Mon-Fri 6am - 4pm<br />
-                Sat & Sun 10am - 5pm
+                Monday to Friday<br />
+                7am - 6pm<br />
+              </p>
+              <p>
+                Saturday & Sunday<br />
+                8am - 4pm
               </p>
               <div class="d-flex">
                 <div>
@@ -106,7 +109,7 @@
                     class="fa-solid fa-phone me-1"
                     style="vertical-align: text-bottom"
                   ></i></span
-                ><span><a href="#">01275 755 634</a></span>
+                ><span class="not"><a href="#">01275 755 634</a></span>
               </p>
               <p>
                 <span
@@ -114,10 +117,12 @@
                     class="fa-solid fa-envelope me-1"
                     style="vertical-align: text-bottom"
                   ></i></span
-                ><span><a href="./index.html">cobwebs@coffee.co.uk</a></span>
+                ><span class="not"
+                  ><a href="./index.html">cobwebs@coffee.co.uk</a></span
+                >
               </p>
             </div>
-            <div class="google-map mb-3 mx-md-auto mx-xl-0">
+            <div class="google-map mb-3">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2359.41201117536!2d-2.482133822826636!3d53.74654634470369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b9fc8d615fda1%3A0xc75f962b38340bb5!2sBlackburn!5e0!3m2!1sen!2suk!4v1714572013425!5m2!1sen!2suk"
                 width="600"
@@ -129,17 +134,20 @@
               ></iframe>
             </div>
           </div>
-        </section>
-        <!-- Contact us form -->
-        <section class="mt-4 text-center">
+        </div>
+      </section>
+      <!-- Contact us form -->
+      <section class="py-4 py-md-5 bg-dark text-light">
+        <div class="container">
           <div class="row">
-            <div class="col-md-10 col-lg-8 mx-md-auto">
+            <div class="col-md-10 col-lg-8">
               <h2>Get In Touch</h2>
               <form
                 action="https://example.com"
                 method="POST"
                 class="needs-validation"
                 novalidate
+                data-bs-theme="dark"
               >
                 <div class="mb-3 text-start">
                   <label for="fullname" class="form-label">Name:</label
@@ -154,7 +162,6 @@
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">Please enter your name.</div>
                 </div>
-
                 <div class="mb-3 text-start">
                   <label for="email" class="form-label">Email:</label
                   ><input
@@ -164,8 +171,12 @@
                     class="form-control"
                     placeholder="email"
                     minlength="8"
+                    aria-describedby="emailHelp"
                     required
                   />
+                  <div id="email" class="form-text text-light text-opacity-75">
+                    We'll never share your email with anyone else.
+                  </div>
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">
                     Please enter a valid email address.
@@ -193,25 +204,27 @@
                     required
                     checked
                   /><label for="news" class="form-check-label label"
-                    >Sign up to receive news updates, events and
-                    promotions.</label
+                    >Sign up to our newsletter to receive updates, events,
+                    promotions and more.</label
                   >
                 </div>
-                <div class="mb-3">
+                <div>
                   <input
                     type="submit"
                     value="Submit"
-                    class="btn btn-primary"
+                    class="myButton p-3"
                     id="formButton"
                   />
                 </div>
               </form>
             </div>
           </div>
-        </section>
-        <!-- Social media contact details -->
-        <section class="mt-4">
-          <div class="d-flex flex-column align-items-center">
+        </div>
+      </section>
+      <!-- Social media contact details -->
+      <section class="py-4 py-md-5 social">
+        <div class="container">
+          <div class="d-flex flex-column">
             <h2>Our Socials</h2>
             <p>
               You can also message us on facebook, X, Instagram or Whatsapp, we
@@ -219,39 +232,77 @@
             </p>
             <div>
               <a href="https://www.facebook.com/" target="_blank"
-                ><i class="fa-brands fa-facebook fa-xl pe-4"></i
+                ><i
+                  class="fa-brands fa-facebook fa-xl me-4"
+                  style="color: #0765ff"
+                ></i
               ></a>
               <a href="https://www.instagram.com/" target="_blank"
-                ><i class="fa-brands fa-instagram fa-xl pe-4"></i
+                ><i
+                  class="fa-brands fa-instagram fa-xl me-4"
+                  style="
+                    color: white;
+                    background: radial-gradient(
+                      circle at 30% 107%,
+                      #fdf497 0%,
+                      #fdf497 5%,
+                      #fd5949 45%,
+                      #d6249f 60%,
+                      #285aeb 90%
+                    );
+                  "
+                ></i
               ></a>
               <a href="https://twitter.com/?lang=en" target="_blank"
-                ><i class="fa-brands fa-x-twitter fa-xl pe-4"></i
+                ><i
+                  class="fa-brands fa-x-twitter fa-xl me-4"
+                  style="background-color: black; color: white"
+                ></i
               ></a>
               <a href="https://www.whatsapp.com/" target="_blank"
-                ><i class="fa-brands fa-whatsapp fa-xl"></i
+                ><i
+                  class="fa-brands fa-whatsapp fa-xl"
+                  style="color: #23d366"
+                ></i
               ></a>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
-    <!-- Footer -->
+    <!-- footer -->
     <footer>
-      <div class="container mt-5">
+      <div class="container">
         <!-- contact details -->
-        <a
-          class="d-flex fs-5 mb-3 justify-content-lg-center footerLogo"
-          href="./index.html"
+        <a class="d-flex fs-5 mb-3 footerLogo mt-5" href="./index.html"
           ><i class="fa-solid fa-mug-hot me-2 fa-lg"></i>Cobweb's Coffee</a
         >
-        <div class="row">
+        <div class="row mb-3">
+          <!-- Sitemap -->
+          <div class="col-12 col-lg-4 mb-3">
+            <nav class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link active px-0"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-0" href="./index.html#welcome"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-0" href="./menu.html">Menu</a>
+              </li>
+              <li>
+                <a class="nav-link px-0" href="./contact.html">Contact Us</a>
+              </li>
+            </nav>
+          </div>
           <div class="col-12 col-lg-4 d-flex flex-column align-items-lg-center">
-            <h3 class="h5">Contact Us</h3>
-            <p>
-              <span class="mb-2">Opening hours:<br /></span>
-              Mon-Fri 6am - 4pm<br />
-              Sat & Sun 10am - 5pm
-            </p>
             <address>
               <div class="d-flex">
                 <div>
@@ -274,7 +325,7 @@
                     class="fa-solid fa-phone me-1"
                     style="vertical-align: text-bottom"
                   ></i></span
-                ><span><a href="#">01275 755 634</a></span>
+                ><span class="not"><a href="#">01275 755 634</a></span>
               </p>
               <p>
                 <span
@@ -282,58 +333,49 @@
                     class="fa-solid fa-envelope me-1"
                     style="vertical-align: text-bottom"
                   ></i></span
-                ><span><a href="./index.html">cobwebs@coffee.co.uk</a></span>
+                ><span class="not"
+                  ><a href="./index.html">cobwebs@coffee.co.uk</a></span
+                >
               </p>
             </address>
           </div>
-          <!-- Sitemap -->
-          <div class="col-12 col-lg-4 flex-column align-items-lg-center">
-            <h3 class="h5 text-lg-center">Sitemap</h3>
-            <nav class="nav flex-column align-items-lg-center">
-              <li class="nav-item">
-                <a
-                  class="nav-link active px-0"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-0" href="./index.html#welcome"
-                  >About Us</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-0" href="./menu.html">Menu</a>
-              </li>
-              <li>
-                <a class="nav-link px-0" href="./contact.html">Contact Us</a>
-              </li>
-            </nav>
-          </div>
-          <!-- Social media links -->
-          <div
-            class="col-12 col-lg-4 d-flex flex-column justify-content-start align-items-lg-center"
-          >
-            <h3 class="h5 my-3 mt-lg-0">Follow Us</h3>
-            <div>
-              <a href="https://www.facebook.com/" target="_blank"
-                ><i class="fa-brands fa-facebook fa-xl pe-4"></i
-              ></a>
-              <a href="https://www.instagram.com/" target="_blank"
-                ><i class="fa-brands fa-instagram fa-xl pe-4"></i
-              ></a>
-              <a href="https://twitter.com/?lang=en" target="_blank"
-                ><i class="fa-brands fa-x-twitter fa-xl pe-4"></i
-              ></a>
-              <a href="https://www.whatsapp.com/" target="_blank"
-                ><i class="fa-brands fa-whatsapp fa-xl"></i
-              ></a>
-            </div>
+          <div class="col-12 col-lg-4 d-flex justify-content-lg-end">
+            <p>
+              <span class="mb-3"><b>Mon-Fri</b> 6am - 4pm<br /></span>
+              <span><b>Sat & Sun</b> 10am - 5pm</span>
+            </p>
           </div>
         </div>
+      </div>
+      <div class="lower-footer bg-dark pt-4">
+        <!-- Social media links -->
+        <div class="d-flex justify-content-center">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i
+              class="fa-brands fa-facebook fa-2xl pe-4 pe-md-5"
+              style="color: white"
+            ></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i
+              class="fa-brands fa-instagram fa-2xl pe-4 pe-md-5"
+              style="color: white"
+            ></i
+          ></a>
+          <a href="https://twitter.com/?lang=en" target="_blank"
+            ><i
+              class="fa-brands fa-x-twitter fa-2xl pe-4 pe-md-5"
+              style="color: white"
+            ></i
+          ></a>
+          <a href="https://www.whatsapp.com/" target="_blank"
+            ><i class="fa-brands fa-whatsapp fa-2xl" style="color: white"></i
+          ></a>
+        </div>
         <!-- Copyright information -->
-        <div class="d-flex justify-content-center align-items-center mt-3">
+        <div
+          class="d-flex justify-content-center align-items-center mt-4 text-light"
+        >
           <p>
             <small
               >&copy <time>2024</time> Cobweb's Coffee. All rights

@@ -26,9 +26,9 @@
     <header>
       <div class="container">
         <!-- Collapsible bootstrap navbar -->
-        <nav class="navbar navbar-expand-lg py-3">
+        <nav class="navbar navbar-expand-lg py-3" data-bs-theme="dark">
           <div class="container-fluid">
-            <a class="navbar-brand lato-normal d-flex fs-5" href="./index.html"
+            <a class="navbar-brand d-flex" href="./index.html"
               ><i class="fa-solid fa-mug-hot me-2 fa-lg"></i>Cobweb's Coffee</a
             >
             <button
@@ -68,19 +68,19 @@
         class="container-fluid hero d-flex justify-content-center align-items-center"
       >
         <div class="heroHeader d-flex flex-column align-items-center">
-          <hgroup class="text-center mb-2">
-            <h1>Comfort, Cosiness and Coffee</h1>
-            <p class="h4">Your friendly local retreat</p>
+          <hgroup class="text-center">
+            <h1 class="mb-3">Comfort, Cosiness and Coffee</h1>
+            <p class="h4 mb-4">Your friendly local retreat</p>
           </hgroup>
           <a href="#welcome"
-            ><button class="p-2 fs-5 p-lg-3 myButton">More about us</button></a
+            ><button class="fs-5 p-3 fw-bold myButton">More about us</button></a
           >
         </div>
       </div>
     </header>
     <main>
       <!-- About us section -->
-      <section id="welcome">
+      <section id="welcome" class="pt-4 pb-3">
         <div class="container-fluid welc">
           <div class="container">
             <div class="row">
@@ -91,17 +91,21 @@
                 <p>
                   We're a cosy little coffee shop founded in Bradshaw in 2021 by
                   local barista and coffee aficionado Louisa. We aim to provide
-                  a welcoming and inclusive space for you to relax, work (we
-                  have free wi-fi!) and socialise over excellent brews, cakes
-                  and bakes.
+                  a <b>welcoming</b> and <b>inclusive</b> space for you to
+                  relax, work (we have free wi-fi!) and socialise over excellent
+                  brews, cakes and bakes.
                 </p>
                 <p>
-                  Opening hours:<br />
-                  Mon-Fri 6am - 4pm<br />
-                  Sat & Sun 10am - 5pm
+                  <b>Monday to Friday<br /></b>
+                  7am - 6pm<br />
                 </p>
+                <p>
+                  <b>Saturday & Sunday<br /></b>
+                  8am - 4pm
+                </p>
+
                 <a href="./contact.html#visit"
-                  ><button class="p-2 fs-5 p-lg-3 mb-3 myButton">
+                  ><button class="p-3 fw-bold mb-3 mb-lg-0 fs-5 myButton">
                     Visit Us
                   </button></a
                 >
@@ -116,14 +120,13 @@
           </div>
         </div>
       </section>
-      <hr />
       <!-- Customer favourites bootstrap cards-->
-      <section id="faves" class="mt-4 text-center">
+      <section id="faves" class="text-center py-4">
         <div class="container">
-          <h2>Customer Favourites</h2>
+          <h2 class="mb-3">Customer Favourites</h2>
           <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-2">
+            <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card h-100">
                 <img
                   class="card-img-top"
                   src="./images/lattesmall.jpg"
@@ -138,8 +141,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card mb-2">
+            <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card h-100">
                 <img
                   class="card-img-top"
                   src="./images/carrotcake.jpg"
@@ -154,8 +157,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card mb-2">
+            <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card h-100">
                 <img
                   class="card-img-top"
                   src="./images/cappucino.jpg"
@@ -172,14 +175,14 @@
             </div>
           </div>
           <a href="./menu.html"
-            ><button class="myButton p-lg-3 p-2 fs-5">
+            ><button class="myButton fs-5 p-3 mt-2 mt-md-3 fw-bold">
               Explore the menu
             </button></a
           >
         </div>
       </section>
       <!-- Bootstrap testimonial slider -->
-      <aside class="mt-4">
+      <aside class="py-4 py-lg-5">
         <div
           id="testimonialCarousel"
           class="carousel slide"
@@ -265,21 +268,37 @@
     </main>
     <!-- footer -->
     <footer>
-      <div class="container mt-5">
+      <div class="container">
         <!-- contact details -->
-        <a
-          class="d-flex fs-5 mb-3 justify-content-lg-center footerLogo"
-          href="./index.html"
+        <a class="d-flex fs-5 mb-3 footerLogo mt-5" href="./index.html"
           ><i class="fa-solid fa-mug-hot me-2 fa-lg"></i>Cobweb's Coffee</a
         >
-        <div class="row">
+        <div class="row mb-3">
+          <!-- Sitemap -->
+          <div class="col-12 col-lg-4 mb-3">
+            <nav class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link active px-0"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-0" href="./index.html#welcome"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-0" href="./menu.html">Menu</a>
+              </li>
+              <li>
+                <a class="nav-link px-0" href="./contact.html">Contact Us</a>
+              </li>
+            </nav>
+          </div>
           <div class="col-12 col-lg-4 d-flex flex-column align-items-lg-center">
-            <h3 class="h5">Contact Us</h3>
-            <p>
-              <span class="mb-2">Opening hours:<br /></span>
-              Mon-Fri 6am - 4pm<br />
-              Sat & Sun 10am - 5pm
-            </p>
             <address>
               <div class="d-flex">
                 <div>
@@ -302,7 +321,7 @@
                     class="fa-solid fa-phone me-1"
                     style="vertical-align: text-bottom"
                   ></i></span
-                ><span><a href="#">01275 755 634</a></span>
+                ><span class="not"><a href="#">01275 755 634</a></span>
               </p>
               <p>
                 <span
@@ -310,58 +329,52 @@
                     class="fa-solid fa-envelope me-1"
                     style="vertical-align: text-bottom"
                   ></i></span
-                ><span><a href="./index.html">cobwebs@coffee.co.uk</a></span>
+                ><span class="not"
+                  ><a href="./index.html">cobwebs@coffee.co.uk</a></span
+                >
               </p>
             </address>
           </div>
-          <!-- Sitemap -->
-          <div class="col-12 col-lg-4 flex-column align-items-lg-center">
-            <h3 class="h5 text-lg-center">Sitemap</h3>
-            <nav class="nav flex-column align-items-lg-center">
-              <li class="nav-item">
-                <a
-                  class="nav-link active px-0"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-0" href="./index.html#welcome"
-                  >About Us</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-0" href="./menu.html">Menu</a>
-              </li>
-              <li>
-                <a class="nav-link px-0" href="./contact.html">Contact Us</a>
-              </li>
-            </nav>
-          </div>
-          <!-- Social media links -->
-          <div
-            class="col-12 col-lg-4 d-flex flex-column justify-content-start align-items-lg-center"
-          >
-            <h3 class="h5 my-3 mt-lg-0">Follow Us</h3>
-            <div>
-              <a href="https://www.facebook.com/" target="_blank"
-                ><i class="fa-brands fa-facebook fa-xl pe-4"></i
-              ></a>
-              <a href="https://www.instagram.com/" target="_blank"
-                ><i class="fa-brands fa-instagram fa-xl pe-4"></i
-              ></a>
-              <a href="https://twitter.com/?lang=en" target="_blank"
-                ><i class="fa-brands fa-x-twitter fa-xl pe-4"></i
-              ></a>
-              <a href="https://www.whatsapp.com/" target="_blank"
-                ><i class="fa-brands fa-whatsapp fa-xl"></i
-              ></a>
-            </div>
+          <div class="col-12 col-lg-4 d-flex justify-content-lg-end">
+            <p>
+              <span class="mb-3"><b>Mon-Fri</b> 6am - 4pm<br /></span>
+              <span><b>Sat & Sun</b> 10am - 5pm</span>
+            </p>
           </div>
         </div>
+      </div>
+      <div class="lower-footer bg-dark pt-4">
+        <div class="newsletter">
+          <form></form>
+        </div>
+        <!-- Social media links -->
+        <div class="d-flex justify-content-center">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i
+              class="fa-brands fa-facebook fa-2xl pe-4 pe-md-5"
+              style="color: white"
+            ></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i
+              class="fa-brands fa-instagram fa-2xl pe-4 pe-md-5"
+              style="color: white"
+            ></i
+          ></a>
+          <a href="https://twitter.com/?lang=en" target="_blank"
+            ><i
+              class="fa-brands fa-x-twitter fa-2xl pe-4 pe-md-5"
+              style="color: white"
+            ></i
+          ></a>
+          <a href="https://www.whatsapp.com/" target="_blank"
+            ><i class="fa-brands fa-whatsapp fa-2xl" style="color: white"></i
+          ></a>
+        </div>
         <!-- Copyright information -->
-        <div class="d-flex justify-content-center align-items-center mt-3">
+        <div
+          class="d-flex justify-content-center align-items-center mt-4 text-light"
+        >
           <p>
             <small
               >&copy <time>2024</time> Cobweb's Coffee. All rights

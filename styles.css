@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: "Merriweather", serif;
+  font-family: "Lato", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -15,19 +15,28 @@ p {
   max-width: 64ch;
 }
 
-nav {
-  background-color: #fff;
-}
-
 main {
   flex: 1 0 auto;
 }
 
-.nav-brand,
+header {
+  background-color: #a66b38;
+}
+
+.navbar-brand,
+footer,
+.footerLogo,
+.heroHeader p,
 h1,
 h2,
 h3 {
-  font-family: "Lato", sans-serif;
+  font-family: "Merriweather", serif;
+}
+
+@media screen and (max-width: 330px) {
+  .navbar-brand {
+    font-size: 1rem !important;
+  }
 }
 
 a {
@@ -38,24 +47,27 @@ img {
   border-radius: calc(0.375rem - (1px));
 }
 
-.navbar-brand,
-footer .footerLogo {
-  color: #606c38 !important;
-  font-family: "Lato", sans-serif;
+.navbar-brand {
+  color: #fff !important;
 }
 
 .myButton {
-  background-color: #606c38;
-  color: #fff;
+  background-color: #d9a404;
   border-radius: 8px;
   border: none;
-  transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
 @media (hover: hover) {
   .myButton:hover {
-    background-color: #283618;
+    background-color: #d97c0b;
+    color: #fff;
   }
+}
+
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
 }
 
 /* Hero Section */
@@ -73,7 +85,14 @@ hgroup {
   color: #fff;
 }
 
+/* About us section */
+
 /* Customer Favourites Section */
+
+#faves {
+  background-color: #736363;
+  color: #fff;
+}
 
 .card-img-top {
   width: 100%;
@@ -84,18 +103,25 @@ hgroup {
 
 .card {
   border: none;
+  border-radius: calc(0.375rem - (1px));
 }
 
 /* Testimonials */
 
+aside {
+  background-color: #a66b38;
+  color: #fff;
+}
+
 .carousel-item {
   height: 30vh;
-  background-color: #283618;
-  color: #fff;
 }
 
 /* Footer */
 
+footer .footerLogo {
+  color: #a66b38 !important;
+}
 footer a {
   color: rgba(0, 0, 0, 0.65) !important;
   transition: color 0.15s ease-in-out;
@@ -110,15 +136,34 @@ footer .active {
   color: rgba(0, 0, 0, 1) !important;
 }
 
-footer .footerLogo:hover {
-  color: #606c38 !important;
+footer .not a,
+.not a {
+  color: #736363 !important;
 }
+
+/*.lower-footer,
+.lower-footer .fa-brands {
+  background-color: black;
+  color: white;
+}*/
 
 /* Menu page */
 
+.menu-main {
+  background-color: #736363;
+}
+
+.menu-main h1 {
+  color: #fff;
+}
+
 .accordion-button {
-  background-color: #606c38 !important;
+  background-color: #a66b38 !important;
   color: #fff !important;
+}
+
+.description p {
+  font-family: "Lato", sans-serif;
 }
 
 @media screen and (min-width: 767px) {
@@ -147,4 +192,9 @@ footer .footerLogo:hover {
     top: 0;
     position: absolute;
   }
+}
+
+.social {
+  background-color: #a66b38;
+  color: #fff;
 }
