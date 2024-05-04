@@ -41,6 +41,7 @@ h3 {
 
 a {
   text-decoration: none;
+  font-family: "Lato", sans-serif;
 }
 
 img {
@@ -59,63 +60,10 @@ img {
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
-:focus {
-  outline: 0 !important;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
-}
-
-/* Hero Section */
-
-.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/coffeeshop.jpg);
-  height: 95vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-hgroup {
-  color: #fff;
-}
-
-/* About us section */
-
-/* Customer Favourites Section */
-
-#faves {
-  background-color: #736363;
-  color: #fff;
-}
-
-.card-img-top {
-  width: 100%;
-  height: 35vh;
-  object-fit: cover;
-  border-radius: calc(0.375rem - (1px));
-}
-
-.card {
-  border: none;
-  border-radius: calc(0.375rem - (1px));
-}
-
-/* Testimonials */
-
-aside {
-  background-color: #a66b38;
-  color: #fff;
-}
-
-.carousel-item {
-  height: 30vh;
-}
-
-/* Footer */
-
 footer .footerLogo {
   color: #a66b38 !important;
 }
+
 footer a {
   color: rgba(0, 0, 0, 0.65) !important;
   transition: color 0.15s ease-in-out;
@@ -148,11 +96,56 @@ footer .not a,
   }
 }
 
-/*.lower-footer,
-.lower-footer .fa-brands {
-  background-color: black;
-  color: white;
-}*/
+@media screen and (min-width: 767px) {
+  .bigger {
+    font-size: 1.25rem;
+  }
+}
+
+/* Hero Section */
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/coffeeshop.jpg);
+  height: 95vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+hgroup {
+  color: #fff;
+}
+
+/* Customer Favourites Section */
+
+#faves {
+  background-color: #736363;
+  color: #fff;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+  border-radius: calc(0.375rem - (1px));
+}
+
+.card {
+  border: none;
+  border-radius: calc(0.375rem - (1px));
+}
+
+/* Testimonials */
+
+aside {
+  background-color: #a66b38;
+  color: #fff;
+}
+
+.carousel-item {
+  height: 30vh;
+}
 
 /* Menu page */
 
@@ -201,11 +194,20 @@ footer .not a,
   }
 }
 
-.social {
-  background-color: #a66b38;
-  color: #fff;
+form {
+  font-family: "Lato", sans-serif;
+}
+
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
 }
 
 form .myButton {
-  color: black;
+  color: rgba(0, 0, 0, 1);
+}
+
+.social {
+  background-color: #a66b38;
+  color: #fff;
 }
