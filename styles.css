@@ -55,11 +55,8 @@ img {
   background-color: #d9a404;
   border-radius: 8px;
   border: none;
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-}
-
-.myButton a {
   color: rgba(0, 0, 0, 1) !important;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
 :focus {
@@ -143,7 +140,7 @@ footer .not a,
 @media (hover: hover) {
   .myButton:hover {
     background-color: #d97c0b;
-    color: #fff;
+    color: #fff !important;
   }
 
   .not a:hover {
