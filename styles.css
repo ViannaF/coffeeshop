@@ -58,11 +58,8 @@ img {
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
-@media (hover: hover) {
-  .myButton:hover {
-    background-color: #d97c0b;
-    color: #fff;
-  }
+.myButton a {
+  color: rgba(0, 0, 0, 1) !important;
 }
 
 :focus {
@@ -138,7 +135,20 @@ footer .active {
 
 footer .not a,
 .not a {
-  color: #736363 !important;
+  color: #736363;
+  text-decoration: none;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+@media (hover: hover) {
+  .myButton:hover {
+    background-color: #d97c0b;
+    color: #fff;
+  }
+
+  .not a:hover {
+    color: #22180e;
+  }
 }
 
 /*.lower-footer,
@@ -197,4 +207,8 @@ footer .not a,
 .social {
   background-color: #a66b38;
   color: #fff;
+}
+
+form .myButton {
+  color: black;
 }
