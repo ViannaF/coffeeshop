@@ -122,7 +122,7 @@ footer .not a,
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./images/coffeeshop.jpg);
-  height: 95vh;
+  height: 93vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -130,6 +130,23 @@ footer .not a,
 
 hgroup {
   color: #fff;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  margin-left: -12.5px;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.arrow:hover {
+  opacity: 0.5;
 }
 
 /* Customer Favourites Section */
