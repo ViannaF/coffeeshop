@@ -145,8 +145,16 @@ hgroup {
   transition: opacity 0.3s ease-in-out;
 }
 
-.arrow:hover {
-  opacity: 0.5;
+@media (hover: hover) {
+  .arrow:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
 }
 
 /* Customer Favourites Section */
