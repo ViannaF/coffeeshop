@@ -60,6 +60,21 @@ img {
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
+.newsletter {
+  background-color: #736363;
+  color: #fff;
+}
+
+#email1 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.subscribe-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 footer .footerLogo {
   color: #a66b38 !important;
 }
@@ -80,7 +95,7 @@ footer .active {
 
 footer .not a,
 .not a {
-  color: #736363;
+  color: #736363 !important;
   text-decoration: none;
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
@@ -92,7 +107,7 @@ footer .not a,
   }
 
   .not a:hover {
-    color: #22180e;
+    color: #22180e !important;
   }
 }
 
@@ -166,6 +181,11 @@ aside {
   font-family: "Lato", sans-serif;
 }
 
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
 @media screen and (min-width: 767px) {
   .price {
     width: 60px;
@@ -196,11 +216,6 @@ aside {
 
 form {
   font-family: "Lato", sans-serif;
-}
-
-:focus {
-  outline: 0 !important;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
 }
 
 form .myButton {
