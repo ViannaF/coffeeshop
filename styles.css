@@ -187,6 +187,12 @@ aside {
   height: 30vh;
 }
 
+@media (orientation: landscape) and (max-width: 1000px) {
+  .carousel-indicators {
+    display: none;
+  }
+}
+
 /* Menu page */
 
 .menu-main {
