@@ -56,7 +56,7 @@ img {
   background-color: #d9a404;
   border-radius: 8px;
   border: none;
-  color: rgba(0, 0, 0, 1) !important;
+  color: rgba(0, 0, 0, 1);
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
@@ -66,8 +66,8 @@ img {
   color: rgba(0, 0, 0, 1) !important;
 }
 
-.mybutton:active {
-  background-color: #d97c0b;
+.myButton:active {
+  background-color: #d97c0b !important;
   color: #fff !important;
 }
 
