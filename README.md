@@ -77,6 +77,7 @@ I made extensive use of the various bootstrap utilities for spacing, text format
 - Navigation links on the current page more opaque to remind the user where they are on the site
 - Upper case letters used to draw attention to the newsletter sign up section
 - Sufficient contrast between all text and background to ensure readability (checked with [AIM Contrast Checker](https://webaim.org/resources/contrastchecker/))
+- Used dark overlay and white font colour where text is used over photographs to ensure sufficient contrast
 - Font size always at least 16px on all devices to ensure readability and increases on larger screens for important text
 - Used Bootstrap containers and grid system to ensure alignment between various elements and spacing utilities to avoid pages appearing cluttered
 - Hero section and text large and centered to draw attention
