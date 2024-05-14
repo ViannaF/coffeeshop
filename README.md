@@ -1,24 +1,26 @@
 # Code First Girls Introduction to Web Dev Project
 
-This project is part of the eight week Coding Kickstarter Introduction to Web Dev course with Code First Girls. I decided to create a simple coffee shop website.
+This project is part of the eight week Coding Kickstarter Introduction to Web Dev course with Code First Girls. I decided to create a simple coffee shop website. Here is a link to the live version of the site:
+
+https://github.com/ViannaF/coffeeshop
 
 ## HTML Pages / CSS File
 
 The website has three pages:
 
-- A homepage
-- A menu page
-- A contact page
+- A [homepage](/index.html)
+- A [menu page](/menu.html)
+- A [contact page](/contact.html)
 
-Although I primarily used Bootstap to style the site, I also used an external CSS file to change some Bootstrap default styles where desired and to add custom colors, fonts and components (for example, buttons).
+Although I primarily used Bootstap to style the site, I also used an external [CSS file](/styles.css) to change some Bootstrap default styles where desired and to add custom colors, fonts and components (for example, buttons).
 
 ## Wireframe
 
 I created a low fidelity wireframe for the homepage on [moqups](https://moqups.com/):
 
-(https://app.moqups.com/vuBgmpATfmovUq5jnDljsfxtFnqDP9zC/view/page/ad64222d5)
+https://app.moqups.com/vuBgmpATfmovUq5jnDljsfxtFnqDP9zC/view/page/ad64222d5
 
-<img width="576" alt="Screenshot 2024-05-14 at 18 37 56" src="https://github.com/ViannaF/coffeeshop/assets/88505281/15b2ad79-4df6-4b53-a790-c3ba860b38de">
+<img width="576" alt="Screenshot of wireframe" src="https://github.com/ViannaF/coffeeshop/assets/88505281/15b2ad79-4df6-4b53-a790-c3ba860b38de">
 
 ## CSS Framework
 
