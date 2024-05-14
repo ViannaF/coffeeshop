@@ -14,9 +14,11 @@ Although I primarily used Bootstap to style the site, I also used an external CS
 
 ## Wireframe
 
-I created a wireframe for the homepage on [moqups](https://moqups.com/):
+I created a low fidelity wireframe for the homepage on [moqups](https://moqups.com/):
 
 (https://app.moqups.com/vuBgmpATfmovUq5jnDljsfxtFnqDP9zC/view/page/ad64222d5)
+
+<img width="576" alt="Screenshot 2024-05-14 at 18 37 56" src="https://github.com/ViannaF/coffeeshop/assets/88505281/15b2ad79-4df6-4b53-a790-c3ba860b38de">
 
 ## CSS Framework
 
