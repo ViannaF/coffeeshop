@@ -93,9 +93,9 @@ I made extensive use of the various bootstrap utilities for spacing, text format
 - Used bootstrap grid system to create an "About Us" section that consists of two columns (one text, one photograph) which are stacked on small - medium devices and side by side on larger screens
 - Used bootstrap cards to show customers' favourite menu items - cards are stacked on small to medium devices and in three columns on larger devices
 - The arrows on the tesimonial carousel disappear on small devices as there is not enough room for them
-- The footer consists of three stacked columns (sitemap, contact details, opening hours and ) that are displayed side by side on larger screens
+- The footer consists of three stacked columns (sitemap, contact details, opening hours) that are displayed side by side on larger screens
 - The newsletter section also consists of three stacked columns that are dispalyed side by side on larger screens.
 - All social media icon links are large enough to tap on touchscreen devices
-- Used Bootstrap flex utilities for the content of the menu accordion items so that the headings/descriptions and the prices are two stacked columns on small to medium devices and side by side on larger screens.
-- Used Bootstrap flex utilities so that the visit us section on the contact us page is displayed as two stacked columns (contact details and google map) on small to medium devices and side by side on larger screens.
+- Used Bootstrap flex utilities for the content of the menu accordion items so that the headings/descriptions and the prices are two stacked columns on small to medium devices and side by side on larger screens
+- Used Bootstrap flex utilities so that the visit us section on the contact us page is displayed as two stacked columns (contact details and google map) on small to medium devices and side by side on larger screens
 - Used CSS hack found [here](https://blog.hubspot.com/website/how-to-embed-google-map-in-html#:~:text=To%20make%20a%20responsive%20Google%20Map%20in%20HTML%2C%20take%20your,with%20the%20class%20google%2Dmap.&text=Here's%20the%20result.,the%20size%20of%20your%20browser.) to ensure google map scales to fit smaller devices
