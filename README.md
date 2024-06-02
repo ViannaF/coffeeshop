@@ -1,5 +1,8 @@
 # Code First Girls Introduction to Web Dev Project
 
+<img width="1512" alt="certificateImage" src="https://github.com/ViannaF/coffeeshop/assets/88505281/ce076968-cb42-4f65-9749-7a83622e43c4">
+
+
 This project is part of the eight week Coding Kickstarter Introduction to Web Dev course with Code First Girls. I decided to create a simple coffee shop website. Here is a link to the live version of the site:
 
 https://viannaf.github.io/coffeeshop/
